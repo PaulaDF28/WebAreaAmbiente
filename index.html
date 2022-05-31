@@ -6,13 +6,73 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ambiente - Municipalidad de Anisacate</title>
+    <link rel=stylesheet href="./assets/bootstrap/css/bootstrap.min.css">
+
     <link rel=stylesheet href="./css/styles.css">
 </head>
 
 <body>
     <main class="main">
         <header class="header-inicio">
-            <img src="./assets/Ambiente.png" class="logo-ambiente">
+
+            <nav class="navbar navbar-expand-lg navbar-light ">
+                <a class="navbar-brand" href="#">
+                    <img src="./assets/Ambiente.png" class="logo-ambiente" height="100px" width="300px">
+                  </a>
+                  
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbCollapse" 
+                    aria-controls="navbCollapse" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbCollapse">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/acercade.html">Acerca de</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/tramites.html">Tramites</a>
+                        </li>                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/escuelaambiental.html">Escuela Ambiental</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/garabato.html">Garabato</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                        </li>
+                        <!-- <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-expanded="false">
+                                Contacto
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li> -->
+                        <!-- <li class="nav-item">
+                            <a class="nav-link disabled">Disabled</a>
+                        </li> -->
+                    </ul>
+
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </div>
+            </nav>
+
+
+            <!-- <img src="./assets/Ambiente.png" class="logo-ambiente">
             <nav>
                 <ul class="lista-menu">
                     <li>
@@ -46,7 +106,7 @@
                         </a>
                     </li>
                 </ul>
-            </nav>
+            </nav> -->
         </header>
 
         <section class="container-principal">
@@ -61,7 +121,7 @@
                 el
                 daño ambiental, a proteger el ambiente y a contribuir al desarrollo sostenible.
             </p>
-            <div class="container-images" >
+            <div class="container-images">
                 <div>
                     <img src="./assets/Arbolado Nativo.jpg" width="300" height="300" style="box-shadow: 89px 35px 205px 7px rgba(26,255,104,1);
                     -webkit-box-shadow: 89px 35px 205px 7px rgba(26,255,104,1);
@@ -104,9 +164,9 @@
         </section>
 
         <aside class="aside">
-<a href="https://www.argentina.gob.ar/ambiente/biblioteca">
-    <img src="./assets/btn_biblioteca_ambiente.png" style="width: 100%;height: 100%">
-</a>
+            <a href="https://www.argentina.gob.ar/ambiente/biblioteca">
+                <img src="./assets/btn_biblioteca_ambiente.png" style="width: 100%;height: 100%">
+            </a>
         </aside>
 
         <footer class="footer">
@@ -127,6 +187,8 @@
             </div>
         </footer>
     </main>
+
+    <script src="./assets/bootstrap/js/bootstrap.min.js"></script>
 </body>
 
 
