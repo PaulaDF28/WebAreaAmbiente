@@ -107,6 +107,11 @@ a {
     display: flex;
     justify-content: center;
     padding-top: 20px;
+    padding: 10px;
+}
+
+#section-mapa{
+    padding: 10px;
 }
 
 .container-section {
@@ -131,14 +136,33 @@ a {
     display: flex;
     justify-content: space-evenly;
 }
+.container-images:hover {filter: saturate(180%);}
+
+.organigrama:hover {
+    transform:scale(1.1);}
 
 @media only screen and (max-width: 1024px) {
     .container-images {
         flex-direction: column;
         align-items: center;
     }
-}
 
+}
+p{
+    animation-duration: 5s;
+    animation-name: slidein; 
+}
+@keyframes slidein {
+    from {
+      margin-left:100%;
+      width:300%
+    }
+  
+    to {
+     margin-left:0%;
+     width:100%;
+   }
+  }
 .acercade {
     display: flex;
     flex-direction: column;

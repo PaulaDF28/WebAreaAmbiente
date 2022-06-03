@@ -73,10 +73,10 @@
         <form class="contacto" style="color: mediumseagreen; font-family: cursive; font-size:larger;">
             <label for="name"> Nombre y apellido </label>
             <input name="name" placeholder="Ingresa tu nombre"> <br> <br>
-            <label for="phone"> Tel </label>
-            <input name="phone" placeholder="111 11111111"> <br> <br>
-            <label for="address"> Dirección </label>
-            <input name="address" placeholder="Calle,número,Barrio">
+           <div style="display:flex; flex-direction: column;"> <label for="phone"> Tel </label>
+            <input name="phone" placeholder="111 11111111"></div> <br> <br>
+           <div style="display:flex;flex-direction: column; "> <label for="address"> Dirección </label>
+            <input name="address" placeholder="Calle,número,Barrio"></div>
             <br><br><br>
             <h4>Qué árboles hay en tu lote?</h4>
             <label for="">Nativos</label>
@@ -98,12 +98,11 @@
             <input type="checkbox" checked><br>
             <label for="">No</label>
             <input type="checkbox" checked><br><br>
-            <label for="consult"> Consulta</label>
-            <textarea name="consult" placeholder="Consulta"></textarea> <br> <br> <br>
+            <div style="display:flex; flex-direction: column;"><label for="consult"> Consulta</label>
+            <textarea name="consult" placeholder="Consulta"></textarea></div> <br> <br> <br>
             <button  style="color: seagreen; font-size:x-large; margin-bottom: 50px;"> Enviar</button>
         </form>
         <section>
-            <div style="display: flex;flex-direction: column;align-items: center;padding-bottom: 50px;">
                 <h1 style="color: black; font-size: xx-large;">Encontranos en la ofi</h1>
                 <div style="display: flex; margin-top: 50px;">
                     <img src="../assets/logo ubicación.png" ; width="40px" ;height="40px">
