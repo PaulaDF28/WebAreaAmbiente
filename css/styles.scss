@@ -1,3 +1,5 @@
+@import "_colors.scss";
+
 * {
     padding: 0;
     margin: 0;
@@ -24,7 +26,7 @@ a {
 }
 
 .header-inicio {
-    background-color: #00B902;
+    background-color: map-get($map: $lista, $key: "verde");
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -78,13 +80,13 @@ a {
 }
 
 .footer {
-    background-color: #00B902;
+    background-color: map-get($map: $lista, $key: "verde");
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     width: 100%;
     align-items: center;
-    color: antiquewhite;
+    color: map-get($map: $lista, $key: "blanco");
     grid-area: footer;
 }
 
@@ -180,11 +182,6 @@ p {
 }
 
 .container-img {
-    padding-top: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
-    display: grid;
     max-width: 800px;
     padding: 1rem;
     margin: 0 auto;
@@ -197,7 +194,7 @@ p {
 .button {
     width: 200px;
     height: 200px;
-    background-color: rgba(43, 250, 7, 0.9);
+    background-color: map-get($map: $lista, $key: "verde-brillante");
     transform: skew(5deg, 5deg);
 }
 
@@ -219,70 +216,56 @@ p {
     }
 }
 
-
-.item-a {
-    grid-column: 1 / 5;
+@mixin item {
     background-position: center;
     display: flex;
     align-items: flex-end;
     justify-content: center;
     border-radius: 20px;
     height: 300px;
+}
+
+.item-a {
+    grid-column: 1 / 5;
+    @include item;
 }
 
 .item-b {
     grid-column: 1 / 3;
-    background-position: center;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    border-radius: 20px;
-    height: 300px;
+    @include item;
 }
 
 .item-c {
     grid-column: 3 / 5;
-    background-position: center;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    border-radius: 20px;
-    height: 300px;
+    @include item;
 }
 
 .item-d {
     grid-column: 1 / 5;
-    background-position: center;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    border-radius: 20px;
-    height: 300px;
+    @include item;
 }
 
 .item-e {
     grid-column: 1 / 5;
     grid-row: 4/6;
-    background-position: center;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    border-radius: 20px;
-    height: 300px;
+    @include item;
 }
 
-.item-a:hover,
+.item-a:hover {
+    transform: scale(1.05);
+}
+
 .item-b:hover,
 .item-c:hover,
 .item-d:hover,
-.item-e:hover {
-    transform: scale(1.05);
+.item-e:hover{
+    @extend .item-a:hover;
 }
 
 .contacto>label {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 20px;
-    color: rgb(85, 116, 85);
+    color: map-get($map: $lista, $key: "verde-apagado");
 }
 
 .contacto {
@@ -356,8 +339,6 @@ p {
     }
 }
 
-@import "_colors.scss";
-
 .container-principal {
     h1 {
         color: $titulo;
@@ -385,3 +366,5 @@ p {
         text-align: center;
     }
 }
+
+

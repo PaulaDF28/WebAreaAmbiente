@@ -119,7 +119,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: antiquewhite;
+  color: aliceblue;
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
@@ -277,15 +277,10 @@ p {
 }
 
 .container-img {
-  padding-top: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 20px;
-  display: -ms-grid;
-  display: grid;
   max-width: 800px;
   padding: 1rem;
   margin: 0 auto;
+  display: -ms-grid;
   display: grid;
   -ms-grid-columns: 200px 200px 200px;
       grid-template-columns: 200px 200px 200px;
@@ -430,8 +425,7 @@ p {
   height: 300px;
 }
 
-.item-a:hover,
-.item-b:hover,
+.item-a:hover, .item-b:hover,
 .item-c:hover,
 .item-d:hover,
 .item-e:hover {
